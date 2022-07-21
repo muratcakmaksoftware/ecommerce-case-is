@@ -1,0 +1,57 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ rootNamespace }}Http\Controllers\Controller;
+use App\Interfaces\RepositoryInterfaces\{{ folder_path }}{{ class_name }}RepositoryInterface;
+
+class {{ class }} extends Controller
+{
+    /**
+     * @var {{ class_name }}RepositoryInterface
+     */
+    private {{ class_name }}RepositoryInterface $repository;
+
+    /**
+     * @param {{ class_name }}RepositoryInterface $repository
+     */
+    public function __construct({{ class_name }}RepositoryInterface $repository)
+    {
+        $this->repository = $repository;
+    }
+
+    public function index()
+    {
+
+    }
+
+    public function create()
+    {
+
+    }
+
+    public function store(array $attributes)
+    {
+
+    }
+
+    public function show($id)
+    {
+
+    }
+
+    public function edit($id)
+    {
+
+    }
+
+    public function update($id, array $attributes)
+    {
+
+    }
+
+    public function destroy($id)
+    {
+
+    }
+}
