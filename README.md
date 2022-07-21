@@ -1,5 +1,10 @@
 ## Installation
 
+### Docker Compose Install & Run
+```
+docker compose up -d
+```
+
 ### Database Create
 Veritabanı otomatik oluşmaz ise manuel oluşturabilirsiniz:
 ```
@@ -23,6 +28,9 @@ php artisan migrate:fresh --seed
 ## About
 Postman API ve Example Request için:\
 https://documenter.getpostman.com/view/14752307/UzR1J2f9
+\
+VEYA [Postman API Collection İndirmek İçin Tıklayın](https://github.com/muratcakmaksoftware/ecommerce-case-is/blob/master/docs/download/PostmanExport/ecommerce-case-is.postman_collection.json)
+
 - Case olduğundan Authentication eklenmemiştir bunun yerine Test için app/Helpers/helpers.php içerisinde CustomerId belirtilmiştir.
 - Repository Design Pattern kullanılmıştır.\
  (Controller => Service => RepositoryInterface => Repository)
